@@ -1,11 +1,13 @@
 
-
+import HomePage from "./components/HomePage";
 import "./App.css";
+import './index.css'; // or './globals.css' depending on your setup
+
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+     <HomePage/>
     </>
   );
 }
