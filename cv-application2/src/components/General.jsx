@@ -1,14 +1,16 @@
-import { useState } from "react";
-
-function General({ fullName, setFullName,handleChange,email,setEmail }) {
-  
-  const [phoneNumber, setPhoneNumber] = useState("+1-800-apple-800");
-  const [address, setAddress] = useState("Cupertion SanFranciso");
-
-
-
+function General({
+  fullName,
+  setFullName,
+  handleChange,
+  email,
+  setEmail,
+  phoneNumber,
+  setPhoneNumber,
+  address,
+  setAddress,
+}) {
   return (
-    <div className="personal-details p-6 bg-gray-100 rounded-lg shadow-md max-w-md mx-auto">
+    <div className="personal-details p-6 bg-gray-100 rounded-lg shadow-md max-w-md mx-auto mb-6">
       <h2 className="text-2xl font-semibold mb-4">Personal Details</h2>
 
       <div className="flex flex-col mb-4">
@@ -53,4 +55,5 @@ function General({ fullName, setFullName,handleChange,email,setEmail }) {
     </div>
   );
 }
+
 export default General;
